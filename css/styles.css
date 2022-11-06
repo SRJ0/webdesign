@@ -79,24 +79,28 @@ header.logo{
     height: 150px;
 }
 
+/* header.logo a img {
+    width: 100%;
+}
+ */
 
 .slideContainer {
-    position: relative;
+    width: 1200px;
+    /* position: relative; */
     height: 200px;
     overflow: hidden;
 }
 
-#slideWrap {
-    width: 100%;
-    position: absolute;
+.slideWrap {
+    /* width: 100%; */
+    /* position: absolute; */
 }
 
 .slide {
-    width: 100%;
-    background: rgb(222, 230, 240);
+    /* width: 100%; */
     position: relative;
+    /* float: left; */
 }
-
 .slide p {
     position: absolute;
     left: 50%;
@@ -106,7 +110,12 @@ header.logo{
     background: #000;
     border-radius: 50px;
     padding: 10px 20px;
+    /* z-index: 996; */
 }
+.slide a img{
+    /* width: 100%; */
+}
+
 
 .content {
     display: flex;

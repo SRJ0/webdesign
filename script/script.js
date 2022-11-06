@@ -4,18 +4,18 @@ $(function() {
 // $('.slide:gt(0)').hide();
 
 setInterval(function() {
-    $('#slideWrap').animate({'margin-top':'-300px'}, function(){
-        $('.slide:first').appendTo('#slideWrap');
-        $('#slideWrap').css({'margin-top':'0px'})
+    $('.slideWrap').animate({'margin-top':'-300px'}, function(){
+        $('.slide:first').appendTo('.slideWrap');
+        $('.slideWrap').css({'margin-top':'0px'})
     });
 
-    // $('#slideWrap').animate({'margin-top':'-300px'}, function(){
-    //     $('.slide').first().appendTo('#slideWrap');
-    //     $('#slideWrap').css({'margin-top':'0px'})
+    // $('.slideWrap').animate({'margin-top':'-300px'}, function(){
+    //     $('.slide').first().appendTo('.slideWrap');
+    //     $('.slideWrap').css({'margin-top':'0px'})
     // })
 
 //     $('.slide:first').fadeOut(1500).next().fadeIn(1500);
-//     $('.slide:first').appendTo('#slideWrap');
+//     $('.slide:first').appendTo('.slideWrap');
 }, 3000);
 
 $('.tabMenu li').click(function(){
