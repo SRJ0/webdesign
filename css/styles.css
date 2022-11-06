@@ -17,7 +17,154 @@ img {
 }
 
 #wrap {
-    width: 1000px;
-    height: 650px;
+    position: relative;
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+header {
+    height: 150px;
     display: flex;
+    background: rgb(205, 209, 221);
+    padding-top: 40px;
+    align-items: center;
+}
+
+/* .headerBg {
+    position: absolete;
+} */
+
+header nav {
+    width: 600px;
+    margin-left: 370px;
+}
+
+header nav > ul {
+    display: flex;
+}
+
+
+header ul a {
+    display: block;
+    text-align: center;
+    background-color: rgb(222, 230, 240);
+    padding: 10px;
+}
+ 
+li.menu {
+    position: relative;
+    width: 25%;
+}
+
+li.menu:hover>a {
+    color: #fff;
+    background: rgb(200,100,100);
+}
+
+ul.menuItem {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 998;
+}
+
+ul.menuItem li:hover a {
+    color: #fff;
+    background: rgb(230, 150, 150);
+}
+
+header.logo{
+    width: 200px;
+    height: 150px;
+}
+
+
+.slideContainer {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+#slideWrap {
+    width: 100%;
+    position: absolute;
+}
+
+.slide {
+    width: 100%;
+    background: rgb(222, 230, 240);
+    position: relative;
+}
+
+.slide p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background: #000;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    height: 200px;
+}
+
+.content > * {
+    height: 250px;
+}
+
+.tab {
+    width: 350px;
+}
+
+.tabMenu li {
+    display: inline-block;
+}
+
+.tabMenu li a {
+    display: block;
+    padding: 10px;
+}
+
+.tabMenu li.on a {
+    background: rgb(255,245,245);
+}
+
+.notice li {
+    display: flex;
+}
+
+.notice li a {
+    display: inline-block;
+}
+
+.notice li:hover {
+    text-decoration: underline;
+}
+
+.gallery {
+    display: none;
+}
+
+.gallery li{
+    display: inline-block;
+    width: 32%;
+}
+
+.gallery a img{
+    width: 100%;
+}
+
+.banner, .direct {
+    position: relative;
+    width: 225px;
+}
+
+footer{
+    margin-top: 30px;
 }
