@@ -124,11 +124,12 @@ header.logo{
 }
 
 .content > * {
-    height: 250px;
+    width: 400px;
+    height: 200px;
 }
 
 .tab {
-    width: 350px;
+    /* width: 350px; */
 }
 
 .tabMenu li {
@@ -142,6 +143,15 @@ header.logo{
 
 .tabMenu li.on a {
     background: rgb(255,245,245);
+}
+
+.tabItem > * {
+    height: 183px;
+    padding: 10px;
+}
+
+.tabItem > *.on {
+    background: rgb(255, 245, 245);
 }
 
 .notice li {
@@ -171,9 +181,16 @@ header.logo{
 
 .banner, .direct {
     position: relative;
-    width: 225px;
 }
 
 footer{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    background: #eee;
     margin-top: 30px;
+}
+
+footer > * {
+    margin: 20px;
 }
