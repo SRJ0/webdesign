@@ -33,16 +33,12 @@ $(function() {
 
   //slide-세로 / 가로는 margin-left
   setInterval(function() { 
+    // fade $('.slide:gt(0)').hide()
     $('.slide-wrap').animate({'margin-top':'-300px'}, function() { 
+      // fade $('.slide:first').fadeOut(1500).next().fadeIn(1500)
       $('.slide:first').appendTo('.slide-wrap')
       $('.slide-wrap').css({'margin-top':'0px'})
     })
-
-  // fade
-  // $('.slide:gt(0)').hide()
-  // setInterval(function() {
-  //   $('.slide:first').fadeOut(1500).next().fadeIn(1500)
-  //   $('.slide:first').appendTo('.slide-wrap')
   }, 3000)
 
   //tab
