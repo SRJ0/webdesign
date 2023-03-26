@@ -10,73 +10,101 @@
     <script src="/script/script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>
-            JUST 쇼핑몰
-            <a href="#"><img src="/img/logo.jpg"></a>
-        </h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">탑</a>
-                    <ul>
-                        <li class="menu-sub-item">블라우스</li>
-                        <li class="menu-sub-item">티</li>
-                        <li class="menu-sub-item">셔츠</li>
-                        <li class="menu-sub-item">니트</li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">아우터</a>
-                    <ul>
-                        <li class="menu-sub-item">자켓</li>
-                        <li class="menu-sub-item">코트</li>
-                        <li class="menu-sub-item">가디건</li>
-                        <li class="menu-sub-item">머플러</li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">팬츠</a>
-                    <ul>
-                        <li class="menu-sub-item">청바지</li>
-                        <li class="menu-sub-item">짧은바지</li>
-                        <li class="menu-sub-item">긴바지</li>
-                        <li class="menu-sub-item">레깅스</li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">악세사리</a>
-                    <ul>
-                        <li class="menu-sub-item">귀고리</li>
-                        <li class="menu-sub-item">목걸이</li>
-                        <li class="menu-sub-item">반지</li>
-                        <li class="menu-sub-item">팔찌</li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <div class="slide-wrapper">
-        <div class="slide">
-            <a href="#"><img src="/img/slide01.jpg;" alt=""></a>
-            <a href="#"><img src="/img/slide02.jpg;" alt=""></a>
-            <a href="#"><img src="/img/slide03.jpg;" alt=""></a>
-        </div>
-    </div>
-    <div class="container">
-        <div class="board">
-            <div class="tab-menu">
-                <div class="tab-item"></div>
-                <div class="tab-item"></div>
+    <div class="popup-bg"></div>
+    <div class="wrap">
+        <div class="popup-box">
+            <div class="popup">
+                <h1>팝업 제목</h1>
+                <p>팝업 내용</p>
+                <button>X</button>
             </div>
         </div>
-        <div class="banner"></div>
-        <div class="link"></div>
+        <header>
+            <h1><a href="#"><img src="/img/logo.png" alt="상단로고"></a></h1>
+            <nav>
+                <ul>
+                    <li class="menu">
+                        <a href="#">탑</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">블라우스</a></li>
+                            <li><a href="#">티</a></li>
+                            <li><a href="#">셔츠</a></li>
+                            <li><a href="#">난닝구</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="#">아우터</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">자켓</a></li>
+                            <li><a href="#">코트</a></li>
+                            <li><a href="#">가디건</a></li>
+                            <li><a href="#">머플러</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="#">팬츠</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">청바지</a></li>
+                            <li><a href="#">짧은바지</a></li>
+                            <li><a href="#">긴바지</a></li>
+                            <li><a href="#">레깅스</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="#">악세사리</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">귀고리</a></li>
+                            <li><a href="#">목걸이</a></li>
+                            <li><a href="#">반지</a></li>
+                            <li><a href="#">팔찌</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="slide-container">
+            <div class="slide-wrap">
+                <div class="slide"><p>내용</p><a href="#"><img src="/img/slide01.png" alt="슬라이드1"></a></div>
+                <div class="slide"><p>내용</p><a href="#"><img src="/img/slide02.png" alt="슬라이드2"></a></div>
+                <div class="slide"><p>내용</p><a href="#"><img src="/img/slide03.png" alt="슬라이드3"></a></div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="board">
+                <ul class="tab-menu">
+                    <li class="on"><a href="#">공지사항</a></li>
+                    <li><a href="#">갤러리</a></li>
+                </ul>
+                <div class="tab-item">
+                    <ul class="notice on">
+                        <li><a href="#">첫번째공지사항</a><span>2023.3.27</span></li>
+                        <li><a href="#">두번째공지사항</a><span>2023.3.27</span></li>
+                        <li><a href="#">세번째공지사항</a><span>2023.3.27</span></li>
+                        <li><a href="#">마지막으로 올리는 공지사항이니 필독하시길</a><span>2023.3.27</span></li>
+                    </ul>
+                    <ul class="gallery">
+                        <li><a href="#"><img src="/img/gallery01.png" alt="갤러리1"></a></li>
+                        <li><a href="#"><img src="/img/gallery02.png" alt="갤러리2"></a></li>
+                        <li><a href="#"><img src="/img/gallery03.png" alt="갤러리3"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="banner">
+                <a href="#"><img src="/img/banner.png" alt="배너"></img></a>
+            </div>
+            <div class="link">
+                <a href="#"><img src="/img/link.png" alt="바로가기"></img></a>
+            </div>
+        </div>
+        <footer>
+            <a href="#" class="footer-logo"><img src="/img/footer_logo.png" alt="하단로고"></a> 
+            <p>Copyright All rights reserved JUST 쇼핑몰</p>
+            <div class="sns">
+                <a href="#"><img src="/img/twitter.webp" alt=""></a>
+                <a href="#"><img src="/img/facebook.webp" alt=""></a>
+                <a href="#"><img src="/img/instagram.webp" alt=""></a>
+            </div>
+        </footer>
     </div>
-    <footer>
-        <div class="logo"></div>
-        <div class="copyright"></div>
-        <div class="sns"></div>
-    </footer>
 </body>
 </html>
