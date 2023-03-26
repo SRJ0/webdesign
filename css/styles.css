@@ -5,7 +5,7 @@ ol, ul {list-style: none;}
 a {text-decoration: none; color: inherit;}
 
 .wrap {position: relative; width: 1200px; height: 700px; margin: 0 auto;}
-header, footer {display: flex; height: 100px; align-items: center;}
+/* header, footer {display: flex; height: 100px; align-items: center;} */
 
 /* 팝업 */
 .popup-bg {position: fixed; width: 100%; height: 100%; background-color: #333333; z-index: 998; opacity: 0.5; display: none;}
@@ -16,14 +16,26 @@ header, footer {display: flex; height: 100px; align-items: center;}
 .popup button {float: right; padding: 4px; cursor: pointer;}
 
 /* 메뉴 */
-header nav {width: 600px; margin-left: 370px;}
-header nav > ul {display: flex;}
-header ul a {display: block; text-align: center; background-color: #fff; padding: 10px;}
-li.menu {position: relative; width: 25%;}
-li.menu > a {font-size: 18px; font-weight: 600;}
-ul.sub-menu {position: absolute; width: 100%; z-index: 998; display: none;}
+.header-bg {position: absolute; width: 100%; height: 163px; left: 0; top: 73px; background-color: beige; z-index: 997; display: none;}
+/* header nav {width: 600px; margin-left: 400px;} */
+/* header nav > ul {display: flex;} */
+header ul a {display: block; text-align: center; background-color: beige; padding: 10px;}
+/* li.menu {position: relative; width: 25%;} */
+li.menu > a {font-size: 18px; font-weight: 600; background-color: #fff;}
+/* ul.sub-menu {position: absolute; width: 100%; z-index: 998; display: none;} */
 li.menu:hover > a {background-color: aqua; color: white;}
 ul.sub-menu li:hover a {background-color: aquamarine; color: white;}
+
+/* 메뉴-세로 */
+.wrap {display: flex;}
+header { width: 200px; height: 100%; border-right: 1px solid #000;}
+header nav {margin-top: 20px;}
+header nav > ul {width:180px; padding-left: 14px;}
+header nav a {display: block; padding: 10px;}
+
+/* 메뉴-세로2 */
+li.menu {position:relative;}
+ul.sub-menu {position: absolute; left: 166px; top: -30px; width: 100%;}
 
 /* 슬라이드-세로 */
 .slide-container {position: relative; height: 300px; overflow: hidden;}
@@ -35,7 +47,7 @@ ul.sub-menu li:hover a {background-color: aquamarine; color: white;}
 /* .slide-wrap {width: 300%;} */
 /* .slide {float: left;} */
 
-/* 페이드 */
+/* 슬라이드-페이드 */
 /* .slide-container {height: 300px;} */
 /* .slide-wrap {position: relative;} */
 /* .slide {position: absolute;} */
