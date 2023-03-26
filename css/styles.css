@@ -27,7 +27,7 @@ li.menu:hover > a {background-color: aqua; color: white;}
 ul.sub-menu li:hover a {background-color: aquamarine; color: white;}
 
 /* 메뉴-세로 */
-.wrap {display: flex;}
+.wrap {display: flex; width: 1200px; height: 700px;}
 header { width: 200px; height: 100%; border-right: 1px solid #000;}
 header nav {margin-top: 20px;}
 header nav > ul {width:180px; padding-left: 14px;}
@@ -35,10 +35,10 @@ header nav a {display: block; padding: 10px;}
 
 /* 메뉴-세로2 */
 li.menu {position:relative;}
-ul.sub-menu {position: absolute; left: 166px; top: -30px; width: 100%;}
+ul.sub-menu {position: absolute; left: 166px; top: -30px; width: 100%; z-index: 998; display: none;}
 
 /* 슬라이드-세로 */
-.slide-container {position: relative; height: 300px; overflow: hidden;}
+.slide-container {position: relative; height: 300px; overflow: hidden; z-index: 0;}
 .slide-wrap {position: absolute;}
 .slide {position: relative;}
 
