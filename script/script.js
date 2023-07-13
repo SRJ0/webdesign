@@ -1,11 +1,11 @@
 $(function() {
   //popup
   $('.notice > li:nth-child(1)').click(function() {
-    $('.popup-box', '.popup-bg').show()
+    $('.popup-box, .popup-bg').show()
   })
 
   $('.popup-box button').click(function() {
-    $('.popup-box', '.popup-bg').hide()
+    $('.popup-box, .popup-bg').hide()
   })
 
   //menu 가로1 2
@@ -27,9 +27,6 @@ $(function() {
     // $(this).find('ul.sub-menu').stop().slideUp()
     $(this).find('ul.sub-menu').stop().fadeOut()//세로2 
   })
-
-  
-  
 
   //slide-세로 / 가로는 margin-left
   setInterval(function() { 
