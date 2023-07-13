@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+* {padding:0;margin:0;box-sizing: border-box; font-size:14px; line-height: 1.2; font-family: '맑은 고딕', Arial, sans-serif; color: #333333;}
+ol, ul {list-style: none;}
+a {text-decoration: none; color: inherit;}
+
+
+/* .wrap {} */
+header {width:100%;background-color: blue;}
+.inner {width:1200px;margin:auto;}
+header .inner {display:flex; justify-content: space-between; align-items: center;}
+header .inner .logo {width:200px; height:40px;}
+header .inner nav ul.gnb {display: flex;}
+header .inner nav ul.gnb li.gnb-menu {position:relative;}
+header .inner nav ul.gnb li.gnb-menu a {display:block; border: 1px solid red;width:120px;height:30px;background-color: #fff; text-align: center; line-height: 30px;}
+header .inner nav ul.gnb li.gnb-menu a.over {background-color: pink;}
+header .inner nav ul.gnb li.gnb-menu + li.gnb-menu {margin-left:-1px;}
+header .inner nav ul.gnb ul.sub-menu {display:none;position:absolute;left:0;top:30px;}
+header .inner nav ul.gnb ul.sub-menu li a:hover {background-color: pink;}
+
+/* 슬라이드-세로 */
+.slide-wrap {position: relative; height: 300px; overflow: hidden; z-index: -1;}
+.slide-box {position: absolute;}
+.slide {position: relative;}
+
+.slide .slide-text {position: absolute; width:100%; left: 50%; top: 90%; transform: translate(-50%, -25%); opacity: 0.7; background:rgb(190, 215, 240); padding: 10px 20px;}
+.slide .slide-text p {text-align:center; color: black;}
+
+/* .slide-wrap {height: 300px; overflow: hidden; z-index: -1;}
+.slide-box {width: 300%;}
+.slide {float: left;} */
