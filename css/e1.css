@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+* {padding: 0; margin: 0; box-sizing: border-box; font-family: '맑은 고딕', Arial, sans-serif; color: #333333;}
+ol, ul {list-style: none;}
+a {text-decoration: none; color: inherit;}
+
+html, body {width:100%; height:100%;}
+.wrap {width:100%; height:100%;}
+.top {display:flex; width:100%; height: calc(100% - 120px);}
+header {background-color: aqua; width:200px;}
+.content {background-color: aquamarine; width: 400px;}
+.slide-wrap {background-color: black; width: calc(100% - 600px);}
+footer {background-color: blue; height:120px;}
