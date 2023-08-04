@@ -6,7 +6,8 @@ a {text-decoration: none; color: inherit;}
 
 html, body {width:100%; height:100%;}
 .wrap {width:100%; height:100%;}
-.top {display:flex; width:100%; height: calc(100% - 120px);}
+.top {display:flex; width:100%; height: 100%;}  
+/* height: calc(100% - 120px);} */
 header {background-color: rgb(191, 205, 205); width:200px;height:100%;padding:10px;}
 header .logo a img {width:170px;}
 header nav {margin-top:30px;}
@@ -24,13 +25,32 @@ header nav .gnb .spot-menu {text-align: center;margin-top:30px;}
 header nav .gnb .spot-menu span {font-weight:bold;}
 
 .popup-box {}
-.popup {position:fixed; left:50%; top:50%; transform: translate(-50%,-50%); width:400px;height:300px;background-color: #fff;border:1px solid #000;}
+.popup {z-index: 99999; position:fixed; left:50%; top:50%; transform: translate(-50%,-50%); width:400px;height:300px;background-color: #fff;border:1px solid #000;}
 .popup button {position:absolute; left:90%; top:3%; padding:0 5px;}
 .content {width: 400px; height:100%; padding:20px;}
 .content .banner {}
-.content .board .tab-menu {}
 
-.slide-wrap {background-color: black; width: calc(100% - 600px);}
+.board .notice {margin-top:10px;}
+.board .notice h2 {font-size: 24px; font-weight: bold;}
+.board .notice li {line-height: 24px; }
+.board .notice li a {position:relative;}
+.board .notice li a .subject{width:260px; overflow:hidden; white-space:nowrap; text-overflow: ellipsis;}
+.board .notice li a .date {position:absolute; right:0; top:0;}
+
+.board .gallery {margin-top:30px; display: flex; justify-content: space-between;}
+.board .gallery h2 {font-size: 24px; font-weight: bold;}
+.board .gallery li {width: 170px;}
+.board .gallery li a img{width:100%;}
+
+.link {margin-top:30px; display: flex; justify-content: space-between;}
+.link li {width: 170px;}
+.link li a img{width:80px;}
+
+.slide-container {width: calc(100% - 600px); height:100%; overflow: hidden;}
+.slide-wrap {position:relative; width: 300%; }
+.slide {float: left;}
+.slide .slide-text {position: absolute; width:100%; left: 50%; top: 90%; transform: translate(-50%, -25%); opacity: 0.7; background:rgb(190, 215, 240); padding: 10px 20px;}
+.slide .slide-text p {text-align:center; color: black;}
 
 footer {background-color: blue; height:120px;}
 
