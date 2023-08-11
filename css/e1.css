@@ -24,9 +24,10 @@ header nav .gnb .main-menu ul.sub-menu li:hover {background-color: gray;}
 header nav .gnb .spot-menu {text-align: center;margin-top:30px;}
 header nav .gnb .spot-menu span {font-weight:bold;}
 
-.popup-box {}
+.popup-box { display:none;}
 .popup {z-index: 99999; position:fixed; left:50%; top:50%; transform: translate(-50%,-50%); width:400px;height:300px;background-color: #fff;border:1px solid #000;}
-.popup button {position:absolute; left:90%; top:3%; padding:0 5px;}
+.popup h1 {margin-bottom:15px; background-color: antiquewhite; padding:5px 0px;}
+.popup button {position:absolute; left:92%; top:3%; padding:2px 6px;}
 .content {width: 400px; height:100%; padding:20px;}
 .content .banner {}
 
@@ -47,10 +48,19 @@ header nav .gnb .spot-menu span {font-weight:bold;}
 .link li a img{width:80px;}
 
 .slide-container {width: calc(100% - 600px); height:100%; overflow: hidden;}
-.slide-wrap {position:relative; width: 300%; }
-.slide {float: left;}
+.slide-wrap {position:relative; width: 300%;height:100%; }
+.slide {float: left; height:100%;}
+.slide img {height:100%;}
+
 .slide .slide-text {position: absolute; width:100%; left: 50%; top: 90%; transform: translate(-50%, -25%); opacity: 0.7; background:rgb(190, 215, 240); padding: 10px 20px;}
-.slide .slide-text p {text-align:center; color: black;}
+.slide .slide-text p { color: black;}
 
-footer {background-color: blue; height:120px;}
-
+footer {background-color: rgb(143, 143, 223); height:120px;  display:flex; }
+footer .logo {width:200px; border-right: 1px dotted black; }
+footer .logo img {margin-top: 40px;}
+footer .footer_contents {width:calc(100% - 200px);}
+footer .footer_menu {border-bottom: 1px dotted black; display:flex; justify-content: space-around; height:60px;}
+footer .footer_menu li {margin-right:10px;}
+footer .footer_menu li a {display:block; line-height: 60px; padding: 0 10px;}
+footer .copyright {text-align: center; line-height: 59px;}
+footer .sns img {width:50px;}
