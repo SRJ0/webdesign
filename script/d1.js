@@ -17,10 +17,20 @@ $(function() {
         $('.popup-box').fadeIn();
     });
 
+    $('.tab-menu li').click(function() {
+        $('.tab-menu li').removeClass('on'); 
+        $(this).addClass('on');
+
+        const idx = $(this).index()
+        $('.tab-item > *').hide().removeClass('on')
+        $('.tab-item > *').eq(idx).show().addClass('on')
+
+    });
 
     setInterval(function() {
         $('.slide-wrap').animate({'margin-top':'-400px'}, function() {
-            $('')
+            $('.slide:first').appendTo('.slide-wrap')
+            $('.slide-wrap').css({'margin-top':'0px'})
         })
     }, 3000);
     
